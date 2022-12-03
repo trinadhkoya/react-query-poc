@@ -12,6 +12,6 @@ function ProductItem({ item }) {
 }
 const styles = StyleSheet.create({
   title: { alignSelf: "center", textAlign: "center" },
-  image: { height: 100, width: 100 }
+  image: { height: 100, width: 100 },
 });
 export default ProductItem;
