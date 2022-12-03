@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const HEADERS = {
-  "Content-Type": "application/json"
+  "Content-Type": "application/json",
 };
 const client = axios.create({
   baseURL: "https://dummyjson.com/",
-  headers: HEADERS
+  headers: HEADERS,
 });
 
 client.interceptors.response.use(

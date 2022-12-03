@@ -1,13 +1,13 @@
 import { ActivityIndicator, FlatList } from "react-native";
 import { useQuery } from "@tanstack/react-query";
 import { getAllProducts } from "./product.service";
-import ProductItem from "./ProductItem";
+import ProductItem from "../components/ProductItem";
 
 function ProdList() {
   // Queries
   const query = useQuery({
     queryKey: ["products"],
-    queryFn: getAllProducts
+    queryFn: getAllProducts,
   });
 
   if (query.isLoading || query.isFetching) {
